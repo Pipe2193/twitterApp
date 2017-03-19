@@ -10,7 +10,7 @@ namespace mvc\model\table {
   /**
    * Clase general para las tablas el cual define el CRUD
    *
-   * @author Julian Lasso <ingeniero.julianlasso@gmail.com>
+   * @author Andres F Alvarez L <andresf9321@gmail.com> 
    */
   class tableBaseClass implements tableInterface {
 
@@ -119,7 +119,7 @@ namespace mvc\model\table {
         $newLeng = strlen($line2) - 2;
         $line2 = substr($line2, 0, $newLeng) . ')';
 
-        $sql = $sql . $line1 . $line2;
+        $sql = $sql . $line1 . $line2. 'ON DUPLICATE KEY UPDATE id = id';
 
         model::getInstance()->beginTransaction();
         model::getInstance()->exec($sql);

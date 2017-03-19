@@ -7,7 +7,7 @@ namespace mvc\component {
   /**
    * Description of componentClass
    *
-   * @author Julian Lasso <ingeniero.julianlasso@gmail.com>
+   * @author Andres F Alvarez L <andresf9321@gmail.com> 
    */
   class componentClass {
 

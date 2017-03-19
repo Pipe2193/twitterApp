@@ -13,7 +13,7 @@ namespace hook\security {
   /**
    * Description of securityHookClass
    *
-   * @author Julian Lasso <ingeniero.julianlasso@gmail.com>
+   * @author Andres F Alvarez L <andresf9321@gmail.com> 
    */
   class securityHookClass implements hookInterface {
 
@@ -107,6 +107,14 @@ namespace hook\security {
         session::getInstance()->setCredential($usuario->credencial);
       }
       \usuarioTableClass::setRegisterLastLoginAt($objUsuario[0]->id_usuario);
+      return true;
+    }
+    
+    public static function loginTwitter() {
+      session::getInstance()->setUserAuthenticate(true);
+      session::getInstance()->setUserName($_SESSION['screen_name']);
+      session::getInstance()->setUserId($_SESSION['user_id']);
+      session::getInstance()->setCredential('usuario');
       return true;
     }
 

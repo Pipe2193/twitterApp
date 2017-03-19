@@ -6,7 +6,7 @@ use mvc\config\myConfigClass as config;
 /**
  * Description of bitacoraTableClass
  *
- * @author Julian Lasso <ingeniero.julianlasso@gmail.com>
+ * @author Andres F Alvarez L <andresf9321@gmail.com> 
  */
 class bitacoraTableClass extends bitacoraBaseTableClass {
   

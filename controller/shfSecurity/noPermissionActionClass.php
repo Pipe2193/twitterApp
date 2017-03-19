@@ -11,7 +11,7 @@ use mvc\i18n\i18nClass as i18n;
 /**
  * Description of noPermissionActionClass
  *
- * @author Julian Lasso <ingeniero.julianlasso@gmail.com>
+ * @author Andres F Alvarez L <andresf9321@gmail.com> 
  */
 class noPermissionActionClass extends controllerClass implements controllerActionInterface {
 

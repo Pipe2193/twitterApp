@@ -5,7 +5,7 @@ use mvc\model\table\tableBaseClass;
 /**
  * Description of credencialBaseTableClass
  *
- * @author Julian Lasso <ingeniero.julianlasso@gmail.com>
+ * @author Andres F Alvarez L <andresf9321@gmail.com> 
  */
 class credencialBaseTableClass extends tableBaseClass {
 

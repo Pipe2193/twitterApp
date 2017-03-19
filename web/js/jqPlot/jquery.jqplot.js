@@ -9324,7 +9324,7 @@
      * Date Object, improving date parsing, allowing for multiple formatting 
      * syntaxes and multiple and more easily expandable localization.</p>
      * 
-     * @author Chris Leonello
+     * @author Andres F Alvarez L <andresf9321@gmail.com> Chris Leonello
      * @date #date#
      * @version #VERSION#
      * @copyright (c) 2010-2013 Chris Leonello
@@ -10824,7 +10824,7 @@
      *     - %n or %p (no pass-by-reference in JavaScript)
      *
      *     @version 2007.04.27
-     *     @author Ash Searle 
+     *     @author Andres F Alvarez L <andresf9321@gmail.com> Ash Searle 
      * 
      * You can see the original work and comments on his blog:
      * http://hexmen.com/blog/2007/03/printf-sprintf/
@@ -10833,7 +10833,7 @@
      
      /**
       * @Modifications 2009.05.26
-      * @author Chris Leonello
+      * @author Andres F Alvarez L <andresf9321@gmail.com> Chris Leonello
       * 
       * Added %p %P specifier
       * Acts like %g or %G but will not add more significant digits to the output than present in the input.

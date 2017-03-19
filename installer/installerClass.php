@@ -3,7 +3,7 @@
 /**
  * Description of installerClass
  *
- * @author julianlasso
+ * @author Andres F Alvarez L <andresf9321@gmail.com> julianlasso
  */
 class installerClass {
 

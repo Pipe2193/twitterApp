@@ -12,7 +12,7 @@ use mvc\i18n\i18nClass as i18n;
 /**
  * Description of loginActionClass
  *
- * @author Julian Lasso <ingeniero.julianlasso@gmail.com>
+ * @author Andres F Alvarez L <andresf9321@gmail.com> 
  */
 class loginActionClass extends controllerClass implements controllerActionInterface {
 
@@ -39,7 +39,7 @@ class loginActionClass extends controllerClass implements controllerActionInterf
           log::register('identificacion', 'NINGUNA');  
           hook\security\securityHookClass::redirectUrl();
         } else {
-          session::getInstance()->setError('Usuario y contraseña incorrectos');
+          session::getInstance()->setError('Incorrect username or password.');
           routing::getInstance()->redirect(config::getDefaultModuleSecurity(), config::getDefaultActionSecurity());
         }
       } else {

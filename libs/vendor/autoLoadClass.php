@@ -17,7 +17,7 @@ namespace mvc\autoload {
   /**
    * Description of autoLoadClass
    *
-   * @author Julian Lasso <ingeniero.julianlasso@gmail.com>
+   * @author Andres F Alvarez L <andresf9321@gmail.com> 
    */
   class autoLoadClass {
 

@@ -4,6 +4,12 @@ use mvc\config\myConfigClass as config;
 use mvc\session\sessionClass as session;
 
 config::setRowGrid(10);
+// twitter API KEYS
+config::setTwitterKey("Jwbtt6crAGxViZ8axaTlVE3ot");
+config::setSecretCustomerTwitterKey("7mwf8cq6j5PUJW6iyVpe5wPa4wzL9ZMrBwgwOv5On5q502l50v");
+
+config::setTokenKey('831265185717506049-MiwqVCGK8s7HT7180893BdXN8ICUryP');
+config::setSecretTokenKey('ZlaO9n9t4NV635spJTLhfOty8I0TocyPhCm5OzI82W0RI');
 
 config::setDbHost('localhost');
 config::setDbDriver('mysql'); //pgsql- mysql
@@ -30,7 +36,7 @@ if (config::getDbUnixSocket() !== null) {
 }
 
 config::setPathAbsolute('C:/xampp/htdocs/twitterApp/');
-config::setUrlBase('http://localhost/twitterApp/web/');
+config::setUrlBase('http://twitterApp.com/twitterApp/web/');
 
 config::setScope('dev'); // prod
 
@@ -55,7 +61,7 @@ config::setHeaderExcel2007('Content-Type: application/vnd.openxmlformats-officed
 config::setCookieNameRememberMe('mvcSiteRememberMe');
 config::setCookieNameSite('mvcSite');
 config::setCookiePath('/' . config::getIndexFile());
-config::setCookieDomain('http://localhost/twitterApp/');
+config::setCookieDomain('http://twitterApp.com/twitterApp/');
 config::setCookieTime(3600 * 8); // una hora en segundo 3600 y por 8 serían 8 horas
 
 config::setDefaultModule('default');

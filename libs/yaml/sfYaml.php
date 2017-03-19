@@ -13,7 +13,7 @@
  *
  * @package    symfony
  * @subpackage yaml
- * @author     Fabien Potencier <fabien.potencier@symfony-project.com>
+ * @author Andres F Alvarez L <andresf9321@gmail.com>     Fabien Potencier <fabien.potencier@symfony-project.com>
  * @version    SVN: $Id: sfYaml.class.php 8988 2008-05-15 20:24:26Z fabien $
  */
 class sfYaml {

@@ -9,7 +9,7 @@ namespace mvc\view {
   /**
    * Description of viewClass - vyo͞o
    *
-   * @author Julian Lasso <ingeniero.julianlasso@gmail.com>
+   * @author Andres F Alvarez L <andresf9321@gmail.com> 
    */
   class viewClass {
 
@@ -170,18 +170,18 @@ namespace mvc\view {
 
     /**
      * Funcion estatica publica que incluye un favicon en las vistas del sistema
-     * @author Leonardo Betancourt Caicedo <leobetacai@gmail.com>
+     * @author Andres F Alvarez L <andresf9321@gmail.com> Leonardo Betancourt Caicedo <leobetacai@gmail.com>
      * @return string
      */
     static public function genFavicon() {
       $includes = cacheManagerClass::getInstance()->loadYaml(configClass::getPathAbsolute() . 'config/view.yml', 'viewYaml');
-      $favicon = '<link rel="icon" href="' . configClass::getUrlBase() . 'img/' . $includes['all']['favicon'] . '" type="image/x-icon">';
+      $favicon = '<link rel="icon" href="' . configClass::getUrlBase() . 'img/favicon/' . $includes['all']['favicon'] . '" type="image/x-icon">';
       return $favicon;
     }
 
     /**
      * Funcion diseñada para integrar un titulo a cada vista de el sistema de el portal
-     * @author Leonardo Betancourt Caicedo <leobetacai@gmail.com>
+     * @author Andres F Alvarez L <andresf9321@gmail.com> Leonardo Betancourt Caicedo <leobetacai@gmail.com>
      * @return string
      */
     public static function genTitle() {
