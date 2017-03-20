@@ -18,14 +18,6 @@ class indexActionClass extends controllerClass implements controllerActionInterf
 
     public function execute() {
         try {
-            $fields = array(
-                usuarioTableClass::ID,
-                usuarioTableClass::USER,
-                usuarioTableClass::CREATED_AT
-            );
-            $orderBy = array(
-                usuarioTableClass::USER
-            );
 
             $instance = new TwitterOAuth(config::getTwitterKey(), config::getSecretCustomerTwitterKey(), config::getTokenKey(), config::getSecretTokenKey());
             $friendsList = $instance->get("friends/list");
@@ -37,7 +29,6 @@ class indexActionClass extends controllerClass implements controllerActionInterf
                 session::getInstance()->setCache('friends', $friendsList);
                 $this->account = $friendsList;
             endif;
-
 
             session::getInstance()->setCache('account/verify_credentials', $instance->get("account/verify_credentials"));
             $this->profile = session::getInstance()->getCache('account/verify_credentials');
@@ -51,7 +42,7 @@ class indexActionClass extends controllerClass implements controllerActionInterf
                 $this->timeline = $statusList;
             endif;
             session::getInstance()->setFlash('home', true);
-            //$this->objUsuarios = usuarioTableClass::getAll($fields, true, $orderBy, 'ASC');
+
             $this->defineView('index', 'default', session::getInstance()->getFormatOutput());
         } catch (PDOException $exc) {
             session::getInstance()->setFlash('exc', $exc);

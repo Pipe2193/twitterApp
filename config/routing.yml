@@ -96,6 +96,7 @@ default_create:
   load:
     - model/base/usuarioBaseTableClass.php
     - model/usuarioTableClass.php
+    - libs/twitteroauth/autoload.php
 
 default_edit:
   url:    /usuario/editar

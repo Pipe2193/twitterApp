@@ -9,8 +9,3 @@ $(document).ready(function () {
         $('#mvcIcon').toggle(150);
     });
 });
-
-
-twttr.widgets.load(
-  document.getElementById("tweeteremb")
-);

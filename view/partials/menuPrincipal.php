@@ -25,12 +25,6 @@ use mvc\session\sessionClass as session;
             </ul>
 
             <ul class="nav navbar-nav navbar-right">
-                <form class="navbar-form navbar-left">
-                    <div class="form-group">
-                        <input type="text" class="form-control" placeholder="Search">
-                    </div>
-                    <button type="submit" class="btn btn-default">Search</button>
-                </form>
                 <li>
                     <button type="button" class=" btn btn-primary tweet "  data-toggle="modal" data-target="#tweet">
                         <i class="fa fa-twitter-square" aria-hidden="true"></i>   Tweet

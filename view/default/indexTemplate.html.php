@@ -8,6 +8,7 @@ view::includePartial('partials/menuPrincipal');
 
 <!-- Page Content -->
 <div id="page-content-wrapper" style=" padding-top: 60px;">
+     <?php echo view::includeHandlerMessage() ?>
     <div class="container container-fluid ">
         <div class=" col-md-6">
             <div class="row">
@@ -132,6 +133,11 @@ view::includePartial('partials/menuPrincipal');
                 }
                 ?>
 
+
+                <div class="twPc-div timeline">
+                    <a class="twitter-timeline" href="https://twitter.com/<?php echo $profile->screen_name; ?>/likes">Tweets Liked by <?php echo $profile->screen_name; ?></a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>   
+                </div>   
+
             </div>
         </div>
 
@@ -142,7 +148,7 @@ view::includePartial('partials/menuPrincipal');
                         ?>
                         <blockquote class="twitter-tweet">
                             <p lang="en" dir="ltr"><?php echo $status->text; ?></p>&mdash; <?php echo $status->user->name; ?>
-                            <a href="https://twitter.com/episod/status/<?php echo $status->id; ?>"</a>
+                            <a href="https://twitter.com/episod/status/<?php echo $status->id; ?>"></a>
                         </blockquote> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
                     <?php }
                     ?>
@@ -158,16 +164,16 @@ view::includePartial('partials/menuPrincipal');
 
 
 <!-- Modal -->
-<div class="modal fade" id="tweet" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop=”static” data-keyboard=”false”>
+<div class="modal fade" id="tweet" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" data-backdrop="static" data-keyboard="false">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
-            <form role="form" method="POST" action="">
+            <form role="form" method="POST" action="<?php echo routing::getInstance()->getUrlWeb('default', 'create'); ?>">
                 <div class="modal-header">
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
                     <h4 class=" text-center modal-title" id="myModalLabel">Compose New tweet</h4>
                 </div>
                 <div class="modal-body">
-                    <textarea class="form-control" rows="5" name="tweet" id="tweet" placeholder="What´s happening? "></textarea>
+                    <textarea required class="form-control" rows="5" name="tweet" id="tweet" placeholder="What´s happening? "></textarea>
                 </div>
                 <div class="modal-footer">
                     <button type="submit" class="btn btn-primary"><i class="fa fa-twitter-square" aria-hidden="true"></i> Tweet</button>
@@ -176,4 +182,3 @@ view::includePartial('partials/menuPrincipal');
         </div>
     </div>
 </div>
-<div id="twitter-wjs"></div>
