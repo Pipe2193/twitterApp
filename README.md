@@ -43,7 +43,7 @@ Aplicación de Twitter Crea una aplicación web que interactúa con Twitter y mu
 
 ## Instalación
 
-Para la puesta en marcha de FStudio hay que seguir los siguientes pasos:
+Para la puesta en marcha de twitterApp realizado en my framework propio nombrado Soho Framework, hay que seguir los siguientes pasos:
 
 - Descargar la app de github o adjunto al correo.
 - Descomprimir el archivo descargado.
@@ -58,4 +58,4 @@ Para la puesta en marcha de FStudio hay que seguir los siguientes pasos:
 
 ## Licencia
 
-FStudio es publicado bajo licencia GNU GPL 2.
+Soho Framework es publicado bajo licencia GNU GPL 2.
